@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>
+    <dimen name="txt_tittle_size">@dimen/_18ssp</dimen>
+    <dimen name="txt_body_size">@dimen/_14ssp</dimen>
+    <dimen name="txt_list_size">@dimen/_12ssp</dimen>
+    <dimen name="control_height">@dimen/_42sdp</dimen>
+</resources>

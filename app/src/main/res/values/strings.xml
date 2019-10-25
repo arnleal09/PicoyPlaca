@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Pico y Placa</string>
+    <string name="insert_plate">Inserte placa de su vehiculo</string>
+    <string name="accept">Aceptar</string>
+    <string name="query">Consulta</string>
+    <string name="hour_of_register">Hora del registro: %1$s</string>
+    <string name="plate">Placa: %1$s</string>
+    <string name="hour_consulted">Hora consultada: %1$s</string>
+    <string name="result">Resultado: %1$s</string>
+    <string name="number"> %1$d </string>
+    <string name="consulta_pico_y_placa">Consulta Pico y Placa</string>
+    <string name="query_result">No circular</string>
+    <string name="warning_plate">Ingrese placa valida</string>
+    <string name="warning_date">Ingrese una fecha</string>
+    <string name="circulation">Circular</string>
+    <string name="date">Inserte Fecha</string>
+    <string name="hour">Inserte Hora</string>
+    <string name="date_and_hour">Fecha y Hora</string>
+    <string name="button_set_hour">button set hour</string>
+    <string name="dialog_message">Esta placa tiene %1$d consulta(s) con resultado No circular</string>
+    <string name="dialog_message_erase">¿Desea borrar consultas registradas?</string>
+    <string name="dialog_title">Advertencia</string>
+    <string name="ok">OK</string>
+    <string name="cancel">cancelar</string>
+    <string name="info">Salvoconductos únicamente para personas con discapacidad y de la tercera edad que estén en capacidad de conducir.</string>
+</resources>

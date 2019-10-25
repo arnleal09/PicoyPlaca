@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_height">@dimen/control_height</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:windowSoftInputMode">adjustNothing</item>
+        <item name="android:textColorHint">@drawable/text_color</item>
+        <item name="android:fontFamily">@font/futura_light</item>
+    </style>
+
+    <style name="edit_text_plate">
+        <item name="android:layout_height">@dimen/control_height</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:windowSoftInputMode">adjustNothing</item>
+        <item name="android:textColorHint">@drawable/text_color</item>
+        <item name="android:fontFamily">@font/futura_light</item>
+        <item name="android:background">@drawable/rounded_border</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="back_text_view">
+        <item name="android:layout_height">@dimen/control_height</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/futura_heavy</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txt_tittle_size</item>
+        <item name="android:background">@drawable/rounded_border_accent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="back_text_rv">
+        <item name="android:layout_height">@dimen/control_height</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/futura_heavy</item>
+        <item name="android:background">@drawable/rounded_border</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tittle_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txt_tittle_size</item>
+        <item name="android:fontFamily">@font/futura_heavy</item>
+    </style>
+
+    <style name="body_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/txt_body_size</item>
+        <item name="android:fontFamily">@font/futura_light</item>
+    </style>
+
+    <style name="list_text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/txt_list_size</item>
+        <item name="android:fontFamily">@font/futura_light</item>
+    </style>
+
+    <style name="button">
+        <item name="android:background">@drawable/rounded_border_dark</item>
+        <item name="android:layout_height">@dimen/control_height</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/txt_list_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/futura_light</item>
+    </style>
+
+</resources>

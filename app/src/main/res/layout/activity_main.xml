@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackgroundSolid"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/eTPlate"
+            style="@style/edit_text_plate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/insert_plate"
+            android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz -0123456789"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tVScheduleTime" />
+
+        <TextView
+            android:id="@+id/tVTittle"
+            style="@style/tittle_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/consulta_pico_y_placa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            style="@style/back_text_rv"
+            android:id="@+id/rVLog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbarTrackVertical="@android:color/white"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btnConsult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tVmssg">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/btnSetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button_set_hour"
+            android:onClick="selectTime"
+            app:layout_constraintBottom_toBottomOf="@+id/tVScheduleTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tVScheduleDate"
+            app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/edit_text_plate"
+            android:id="@+id/tVScheduleDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:onClick="selectTime"
+            android:hint="@string/date"
+            android:focusable="false"
+            app:layout_constraintEnd_toStartOf="@+id/btnSetDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tVTittle" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/tVScheduleTime"
+            style="@style/edit_text_plate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/hour"
+            android:onClick="selectTime"
+            android:focusable="false"
+            app:layout_constraintEnd_toStartOf="@+id/btnSetDate"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tVScheduleDate"
+            app:layout_constraintTop_toBottomOf="@+id/tVScheduleDate" />
+
+        <Button
+            android:id="@+id/btnConsult"
+            style="@style/button"
+            android:onClick="consult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/query"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tVmssg"
+            style="@style/back_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:height="48dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eTPlate" />
+
+        <ImageButton
+            android:id="@+id/btnErase"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:onClick="erase"
+            android:src="@drawable/ic_delete_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rVLog"
+            app:layout_constraintEnd_toEndOf="@+id/rVLog" />
+
+        <ImageButton
+            android:id="@+id/btnInfo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:onClick="info"
+            android:src="@drawable/ic_info_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnErase"
+            app:layout_constraintEnd_toEndOf="@+id/rVLog" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
