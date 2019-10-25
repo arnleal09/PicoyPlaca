@@ -11,7 +11,7 @@ Salvoconductos únicamente para personas con discapacidad y de la tercera edad q
 
 MVVM + LiveData + Room
 
-TODO
-UI/UX
-Pruebas Unitarias
-Clean Architecture
+TODO\
+-UI/UX \
+-Pruebas Unitarias\
+-Clean Architecture
